@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Movies database</h1>
+    <h3>Movies List:</h3>
 @foreach($movieList as $movie)
-    <ul>
-        <li>{{ $movie['title'] }}</li>
+    <ul style="list-style: none; padding-left: 0">
+        <li>{{ $movie->id }}) {{ $movie->title }}</li>
     </ul>
 @endforeach
 </body>
